@@ -1,0 +1,23 @@
+<ul>
+    <p>
+        <% if (locals.name) { %>
+            <%= name %>
+                <% } %>
+    </p>
+    <li> <img src="images/user.png" alt="user" width="30px" height="30px" id="userImg"></li>
+</ul>
+</ul>
+</nav>
+<div class="sidenav">
+    <ul>
+        <form action="/newPost" method="POST">
+            <button id="newPostBtn">
+                <b>+</b> NEW POST
+            </button>
+        </form>
+        <li><a href="/MyPosts"> <b>></b> &nbsp; My Posts</a></li>
+        <li><a href="/likedPosts"> <b>></b> &nbsp; Liked Posts</a></li>
+        <li><a href="/"><b>></b> &nbsp; Sign out</a></li>
+    </ul>
+</div>
+<main>

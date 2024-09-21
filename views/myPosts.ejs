@@ -1,0 +1,43 @@
+<%- include("partials/header.ejs") %>
+    <%- include("partials/postlogin.ejs") %>
+        <h1>My Posts</h1>
+        <div class="posts-container">
+            <% if (posts.length> 0) { %>
+                <% posts.forEach(function(post, index) { %>
+                    <div class="post">
+                        <div class="titleImgBtn">
+                            <h2>
+                                <%= post.title %>
+                            </h2>
+                            <div>
+                                <form action="/postFeatures" method="POST">
+                                    <input type="hidden" name="postIndex" value="<%= index %>">
+                                    <button type="button" class="imgBtn" onclick="toggleLike('<%= index %>')">
+                                        <img id="likeImg-<%= index %>" <% if(post.isLiked) { %>
+                                        src="/images/liked.png"
+                                        <%} else {%>
+                                            src="/images/notliked.png" <%}%>
+                                                alt="like Button" class="btnImg">
+                                    </button>
+                                    <button type="submit" class="imgBtn" name="action" value="edit">
+                                        <img src="/images/edit.png" alt="edit Button" class="btnImg">
+                                    </button>
+                                    <button type="submit" class="imgBtn" name="action" value="delete">
+                                        <img src="/images/delete.png" alt="delete Button" class="btnImg">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="blogContent">
+                            <p>
+                                <%= post.blog %>
+                            </p>
+                        </div>
+                    </div>
+                    <% }) %>
+                        <% } else { %>
+                            <h2>No posts yet</h2>
+                            <% } %>
+                                <script src="/js/script.js"></script>
+                                <%- include("partials/footer.ejs") %>

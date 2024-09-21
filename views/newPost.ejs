@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+    <%- include("partials/postlogin.ejs") %>
+        <h1>Write a new post</h1>
+        <div class="form-container">
+            <form action="/submitPost" method="POST">
+                <label for="title">Title</label> &nbsp; &nbsp;
+                <input type="hidden" name="isLiked" value="0">
+                <input type="text" name="title" placeholder="Title" required><br><br>
+                <label for="blog">Blog</label> &nbsp; &nbsp;
+                <textarea name="blog" id="blog" cols="30" rows="10" placeholder="Write your blog here ..."></textarea>
+                <br><br>
+                <button type="submit" id="postBtn">Post</button>
+            </form>
+        </div>
+        <%- include("partials/footer.ejs") %>

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Acme", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+  padding: 100px 0 0 20%;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  z-index: 1000;
+}
+
+nav li {
+  display: inline;
+}
+#loginText {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  padding: 0 10px;
+}
+#userImg {
+  padding-right: 50px;
+}
+#webTitle {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+p {
+  font-size: small;
+  margin: auto 0;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  top: 85px;
+  left: 0;
+  background-color: #4f4f4f;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+}
+.sidenav li {
+  list-style-type: none;
+}
+.sidenav a {
+  padding: 6px 8px 6px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav button {
+  background-color: #d9d9d9;
+}
+button {
+  background-color: #acabab;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 2px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 14px;
+  font-family: "Acme", sans-serif;
+}
+
+button b {
+  font-size: 30px;
+}
+
+#loginBtn {
+  font-size: 16px;
+  margin-left: 20%;
+}
+
+#postBtn {
+  margin-left: 35%;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container form {
+  width: 50%;
+}
+
+.heading {
+  margin-right: 30%;
+}
+
+label[for="blog"] {
+  vertical-align: top;
+}
+
+.post {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0 10px 10px 10px;
+  margin: 20px;
+  background-color: #ffffff;
+  width: 90%;
+}
+
+.blogContent {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #b8b8b8;
+}
+
+.imgBtn {
+  background-color: transparent;
+  width: 30px;
+}
+
+.btnImg {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.titleImgBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+#welcome h1 {
+  /* align in center of wepage vertically and horizontaly*/
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 92px;
+  white-space: nowrap;
+}

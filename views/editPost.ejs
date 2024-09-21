@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+    <%- include("partials/postlogin.ejs") %>
+        <h1>Edit your Post</h1>
+        <div class="form-container">
+            <form action="/editPost" method="POST">
+                <label for="title">Title</label> &nbsp; &nbsp;
+                <input type="text" name="title" value="<%= post.title %>"><br><br>
+
+                <label for="blog">Blog</label> &nbsp; &nbsp;
+                <textarea name="blog" id="blog" cols="30" rows="10"><%= post.blog %></textarea>
+                <br><br>
+
+                <!-- Hidden input to pass postIndex back to the server -->
+                <input type="hidden" name="postIndex" value="<%= postIndex %>">
+
+                <button type="submit" id="postBtn">Update Post</button>
+            </form>
+        </div>
+        <%- include("partials/footer.ejs") %>
