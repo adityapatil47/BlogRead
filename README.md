@@ -36,13 +36,13 @@ Follow these steps to set up and run the project locally:
 5. **Access the application:**
    Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the BlogRead app.
 
-#Features
+# Features
 - Create new blog posts
 - Edit existing posts
 - Delete posts
 - Like and view posts
 
-#Contributing
+# Contributing
 **If you would like to contribute to BlogRead, please follow these steps:**
 - Fork the repository.
 - Create a new branch (git checkout -b feature-branch).
